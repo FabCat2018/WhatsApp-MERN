@@ -1,14 +1,15 @@
 import React from "react"
 import './App.css';
+import Chat from "./Chat";
+import Sidebar from "./Sidebar";
 
 function App() {
   return (
     <div className="app">
-      <h1>Let's Build a MERN WhatsApp Clone</h1>
-    
-      {/* Sidebar component */}
-
-      {/* Chat component */}
+      <div className="app__body">
+        <Sidebar />
+        <Chat />
+      </div>
     </div>
   );
 }
