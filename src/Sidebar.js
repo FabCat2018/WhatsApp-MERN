@@ -1,4 +1,5 @@
-import React from 'react';
+import React from "react";
+import SidebarChat from "./SidebarChat"
 import "./Sidebar.css";
 import { Avatar, IconButton } from '@material-ui/core';
 import ChatIcon from '@material-ui/icons/Chat';
@@ -30,6 +31,12 @@ function Sidebar() {
                     <SearchOutlined />
                     <input placeholder="Search or start new chat" type="text" />
                 </div>
+            </div>
+        
+            <div className="sidebar__chats">
+                <SidebarChat />
+                <SidebarChat />
+                <SidebarChat />
             </div>
         </div>
     );
