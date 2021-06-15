@@ -8,7 +8,6 @@ import axios from "./axios";
 function App() {
     const [messages, setMessages] = useState([]);
 
-
     useEffect(() => {
         axios.get("/messages/sync").then(response => {
             setMessages(response.data);
@@ -37,7 +36,7 @@ function App() {
         <div className="app">
             <div className="app__body">
                 <Sidebar />
-                <Chat />
+                <Chat messages={messages} />
             </div>
         </div>
     );
